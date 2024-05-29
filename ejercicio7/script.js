@@ -6,6 +6,7 @@ function getElement(id) {
   .then(res => res.json())
   .then((res) => {
     console.log(res);
+    let arr = [0,0,0,0,0,0,0,0,0,0,0];
     res.forEach(element => {
         document.write('ID: '+element.id);  
         document.write('<br>')
