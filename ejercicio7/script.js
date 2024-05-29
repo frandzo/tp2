@@ -2,18 +2,6 @@ function getElement(id) {
     return document.getElementById(id);
   }
 let arr = [0,0,0,0,0,0,0,0,0,0,0];
-let tarobj;
-
-async function getData(url) {
-    const response = await fetch(url);
-  
-    return await response.json();
-  }
-  
-const data = getData('https://jsonplaceholder.typicode.com/todos');
-
-
-
 
 fetch('https://jsonplaceholder.typicode.com/users')
 .then(res => res.json())
@@ -61,19 +49,5 @@ function test(id){
     }else{
         document.getElementById('tareas'+id).style="display:none";
         arr[id]=0;
-    }
-
-    
+    }    
 }
-function getTareas(id){
-    document.write('<div style="display:none" id="tareas'+id+'">test</div>');
-    // fetch('https://jsonplaceholder.typicode.com/todos')
-    // .then(tar => tar.json())
-    // .then((tar) => {
-    //     document.write("<div>TEST</div>")
-    //     console.log(tar)
-    // });
-    document.write('<div>TESTDOS</div>')
-}
-
-// console.log(data);
