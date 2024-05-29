@@ -20,7 +20,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
         document.write('<br>')
         document.write('Sitio Web: '+element.website); 
         document.write('<br>')
-        document.write('<button onclick="test('+element.id+')">Ver Tareas</button>')
+        document.write('<button onclick="toggleTareas('+element.id+')">Ver Tareas</button>')
         document.write('<div style="display:none;" id="tareas'+element.id+'">');
         tar.forEach(tarea => {
             if(tarea.userId==element.id){
