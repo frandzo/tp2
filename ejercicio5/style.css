@@ -1,0 +1,30 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+
+form{
+    margin-top:50px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form div{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+form div div{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+button{
+    height:30px;
+    padding:20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
