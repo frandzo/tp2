@@ -1,8 +1,4 @@
-function getElement(id) {
-    return document.getElementById(id);
-  }
 let arr = [0,0,0,0,0,0,0,0,0,0,0];
-
 fetch('https://jsonplaceholder.typicode.com/users')
 .then(res => res.json())
 .then((res) => {
@@ -25,10 +21,10 @@ fetch('https://jsonplaceholder.typicode.com/users')
         document.write('Sitio Web: '+element.website); 
         document.write('<br>')
         document.write('<button onclick="test('+element.id+')">Ver Tareas</button>')
-        document.write('<div style="display:none" id="tareas'+element.id+'">');
+        document.write('<div style="display:none;" id="tareas'+element.id+'">');
         tar.forEach(tarea => {
             if(tarea.userId==element.id){
-                document.write('<div style="display:flex">')
+                document.write('<div style="display:flex;">')
                 if(tarea.completed){
                     document.write('<div style="display:block;color:green;">'+tarea.id+'. '+tarea.title+'</div>')
                 }else{
@@ -41,8 +37,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
         document.write('<hr>')       
     });});
 });
-
-function test(id){
+function toggleTareas(id){
     if(arr[id]==0){
         document.getElementById('tareas'+id).style="display:block";
         arr[id]=1;
