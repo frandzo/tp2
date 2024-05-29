@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="registro" onsubmit="return false;">
+        <h1>Registro</h1>
+        
+        Nombre: <input type="text" required maxlength="50">
+        Apellido: <input type="text" required maxlength="5">
+        Edad (años): <input type="number" id="edad" value="18" min="18" max="150">
+        Altura (cm): <input type="number" id="altura" value="1" min="1" max="230">
+        E-Mail: <input type="text" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+        <input id="subm" type="submit">
+    <script src="./script.js"></script>
+    <p id="p" style="visibility: hidden;">
+        test
+    </p>
+
+</body>
+</html>
