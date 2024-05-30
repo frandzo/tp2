@@ -18,7 +18,7 @@ form div{
     align-items: center;
 }
 
-.subm{
+#subm{
     height:30px;
     width:100px;
     display:flex;
